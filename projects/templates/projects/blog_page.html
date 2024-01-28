@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/blog_page.css' %}">
+{% endblock extra_css %}
+
+{% block body_class %}template-projectspage{% endblock %}
+
+
+{% block content %}
+
+    <!-- Navigation-->
+    <nav id="mainNav" class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Raúl Aznar Alvarez</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://127.0.0.1:8000/my-portfolio/#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <!-- Masthead Heading-->
+            <h1 class="page-section-heading text-center text-uppercase ">{{ page.title }}</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="masthead-subheading font-weight-light mb-0">{{ page.date }}</p>
+            <p class="masthead-subheading font-weight-light mb-0">{{ page.intro }}</p>
+        
+        </div>
+    </header>
+
+    
+    <section id="postb" class="page-section2">
+
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto about-text text-justify body-text">
+                <h3 class="page-section-heading text-justify text-uppercase">Approach</h3>
+                {{ page.approach|richtext }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="postc" class="page-section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-32 col-lg-24 mx-auto about-text text-justify body-text">
+                <h3 class="page-section-heading text-justify text-uppercase ">Results</h3>
+                {{ page.results|richtext }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="postd" class="page-section2">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-16 col-lg-12 mx-auto about-text text-justify body-text">
+                <h3 class="page-section-heading text-justify text-uppercase ">Challenges</h3>
+                {{ page.challen|richtext }}
+                </div>
+            </div>
+        </div>
+
+    
+
+    </section>
+
+
+
+{% endblock %}
+
+
+
+
+{% block page_title %}
+
+    <h2>{{ post.title }}</h2>
+
+{% endblock page_title %}
