@@ -29,22 +29,22 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About it</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/my-portfolio/#about">About</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/#skills">Skills</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/my-portfolio/#skills">Skills</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/#portfolio">Portfolio</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/my-portfolio/#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#experience">Experience</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/my-portfolio/#experience">Experience</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#education">Education</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/my-portfolio/#education">Education</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://raulaznar.onrender.com/my-portfolio/#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +74,6 @@
         <div class="container">
             <div class="row">
                 <div class="mx-auto about-text text-justify body-text">
-                <h3 class="page-section-heading text-justify text-uppercase">Approach</h3>
                 {{ page.approach|richtext }}
                 </div>
             </div>
@@ -84,7 +83,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-32 col-lg-24 mx-auto about-text text-justify body-text">
-                <h3 class="page-section-heading text-justify text-uppercase ">Results</h3>
                 {{ page.results|richtext }}
                 </div>
             </div>
@@ -95,13 +93,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-16 col-lg-12 mx-auto about-text text-justify body-text">
-                <h3 class="page-section-heading text-justify text-uppercase ">Challenges</h3>
                 {{ page.challen|richtext }}
                 </div>
             </div>
         </div>
 
-    
+    <div class="container">
+        <div class="row">
+            <form>                       
+                <div class="text-center mt-3">
+                <input type="button" class="btn btn-secondary btn-xl" value="Back" onclick="history.back()">
+            </div>
+
+            </form>
+        </div>
+    </div>
+
+
 
     </section>
 
