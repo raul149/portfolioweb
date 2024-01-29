@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: wagtail-react
+  name: portfolio
   env: python
   plan: starter
   buildCommand: ./build.sh
@@ -10,7 +10,7 @@ services:
       value: 4
     - key: DATABASE_URL
       fromDatabase:
-        name: wagtail-react
+        name: portfolio
         property: connectionString
     # - key: DJANGO_SECRET_KEY
     - key: SECRET_KEY
@@ -21,6 +21,6 @@ services:
       value: portfolio.settings.prod
 
 databases:
-- name: wagtail-react
+- name: portfolio
   databaseName: django
   user: django
