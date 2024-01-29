@@ -3,7 +3,7 @@ import dj_database_url
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['raulaznaralvarez.onrender.com']
+ALLOWED_HOSTS = ['raulaznaralvarez.onrender.com','raulaznar.onrender.com']
 
 INSTALLED_APPS += [    'whitenoise.runserver_nostatic',
     'cloudinary',
