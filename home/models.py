@@ -27,8 +27,8 @@ class HomePage(AbstractEmailForm):
     photo = models.ForeignKey('wagtailimages.Image', null=True, on_delete=models.SET_NULL, related_name='+',
                               help_text="Please, upload a square photo (for example 300px x 300px).")
     about = RichTextField(blank=False, null=True)
-    education = RichTextField(blank=False, null=True)
-    experience = RichTextField(blank=False, null=True)
+    #education = RichTextField(blank=False, null=True)
+    #experience = RichTextField(blank=False, null=True)
     projects_note = RichTextField(blank=True, help_text="Short description of your projects.")
     thank_you_text = RichTextField(blank=False, null=True,
                                    help_text="Text that will be shown to the visitor after submitting the contact form")
