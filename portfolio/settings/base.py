@@ -23,7 +23,7 @@ DEBUG = False
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['raulaznar.pythonanywhere.com']
+ALLOWED_HOSTS = ['raulaznar.onrender.com']
 
 # Application definition
 
