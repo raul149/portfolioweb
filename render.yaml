@@ -9,7 +9,10 @@ services:
     - key: WEB_CONCURRENCY
       value: 4
     - key: DATABASE_URL
-      value: "sqlite:///db.sqlite3"
+      fromDatabase:
+        name: portfolio
+        property: connectionString
+
     # - key: DJANGO_SECRET_KEY
     - key: SECRET_KEY
       generateValue: true
