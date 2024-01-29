@@ -2,9 +2,10 @@ from .base import *
 import dj_database_url
 
 DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1', 'raulaznaralvarez.onrender.com']
-INSTALLED_APPS += [
-    'whitenoise.runserver_nostatic',
+
+ALLOWED_HOSTS = []
+
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')if RENDER_EXTERNAL_HOSTNAME:    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)INSTALLED_APPS += [    'whitenoise.runserver_nostatic',
     'cloudinary',
     'cloudinary_storage',
 ]
