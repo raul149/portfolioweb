@@ -18,7 +18,7 @@ services:
     - key: DJANGO_ADMIN_URL
       generateValue: true
     - key: DJANGO_SETTINGS_MODULE
-      value: portfolio.settings.productiondatabases:
+      value: portfolio.settings.prod
 
 databases:
 - name: wagtail-react
