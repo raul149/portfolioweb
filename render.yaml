@@ -19,6 +19,4 @@ services:
       generateValue: true
     - key: DJANGO_SETTINGS_MODULE
       value: portfolio.settings.productiondatabases:
-- name: wagtail-react
-  databaseName: django
-  user: django
+
