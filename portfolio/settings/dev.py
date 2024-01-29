@@ -1,5 +1,5 @@
 from .base import *
 
-DEBUG = False
+DEBUG = 'RENDER' not in os.environ
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
