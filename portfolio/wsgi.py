@@ -15,5 +15,5 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "portfolio.settings.prod")
 
 application = get_wsgi_application()
 
-User = get_user_model();
-User.objects.create_superuser('admin', 'admin@gmail.com', 'password')
+#User = get_user_model();
+#User.objects.create_superuser('admin', 'admin@gmail.com', 'password')
