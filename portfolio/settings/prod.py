@@ -1,7 +1,7 @@
 from .base import *
 import dj_database_url
 
-DEBUG = "RENDER"
+DEBUG = False
 
 ALLOWED_HOSTS = ['raulaznaralvarez.onrender.com','raulaznar.onrender.com','localhost']
 
