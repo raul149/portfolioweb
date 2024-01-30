@@ -9,7 +9,7 @@ services:
     - key: WEB_CONCURRENCY
       value: 4
     - key: DATABASE_URL
-      value: "sqlite:///db.sqlite3"
+      value: "postgres://ldiqtjul:WQP8bzA_-4Nhww65rpXumlwfhsPhU7d1@hattie.db.elephantsql.com/ldiqtjul"
     # - key: DJANGO_SECRET_KEY
     - key: SECRET_KEY
       generateValue: true
