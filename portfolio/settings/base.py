@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-
+import dj_database_url
 from django.core.management.utils import get_random_secret_key
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
